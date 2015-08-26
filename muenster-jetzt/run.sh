@@ -1,4 +1,4 @@
 #!/bin/bash
 
-php app/console server:run 5.189.136.42:8008
+php app/console server:run 127.0.0.1:8008
 

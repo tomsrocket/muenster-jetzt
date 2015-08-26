@@ -6,14 +6,14 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-class LocationDetailController extends Controller
+class EventListController extends Controller
 {
     /**
-     * @Route("/veranstaltungsort/{location_name}", name="location_detail")
+     * @Route("/veranstaltungen", name="event_list")
      */
-    public function detailAction( $location_name)
+    public function listAction( $location_name)
     {
-        return $this->render('location/detail.html.twig', array(
+        return $this->render('event/list.html.twig', array(
             'location_name' => $location_name
         ));
     }
